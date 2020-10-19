@@ -24,7 +24,7 @@ You ran run `make uninstall` to remove the systemd units, but the configs locate
 
 ```shell
 systemctl start netns-nat@helloworld
-chnetns helloworld ip address
+/bin/ip netns exec helloworld ip address
 ```
 
 Note: Network interface names are derived from the netns name, so do not create netns names longer than 12 characters. 
